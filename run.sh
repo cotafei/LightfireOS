@@ -1,0 +1,1 @@
+kvm -kernel boot/kernel -m 2000
