@@ -12,7 +12,6 @@ global read_port
 global write_port
 global load_idt
 global page_directory
-global GDT
 
 extern kmain 		;this is defined in the c file
 extern keyboard_handler_main
@@ -62,8 +61,6 @@ start:
     or al, al
     jnz .displaying
     jmp short $
- 
-string: db "Hello world!", 0
 
 section .bss
 resb 8192; 8KB for stack
