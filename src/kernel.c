@@ -185,6 +185,9 @@ void kmain(void)
 
 	idt_init();
 	kb_init();
+	asm volatile("sti");
 
-	while(1);
+	for (;;){
+		asm volatile("hlt");
+	}
 }

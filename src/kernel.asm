@@ -53,7 +53,6 @@ start:
 	call kmain
 	hlt 				;halt the CPU
 	mov edi, 0xB8000
-    mov esi, string
     mov ah, 0x0F
    .displaying:
     lodsb
