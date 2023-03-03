@@ -1,1 +1,1 @@
-kvm -kernel boot/kernel -m 2000
+kvm -kernel boot/kernel -m 64
